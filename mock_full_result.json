@@ -1,0 +1,301 @@
+[
+  {
+    "chart_id": "6f1a2b3c-0001-4a01-9a01-000000000001",
+    "partial": false,
+    "key_ten_gods": [
+      {
+        "name": "七杀",
+        "position": "month_branch_main",
+        "rank": 1
+      },
+      {
+        "name": "偏印",
+        "position": "hour_stem",
+        "rank": 2
+      },
+      {
+        "name": "劫财",
+        "position": "year_stem",
+        "rank": 3
+      },
+      {
+        "name": "偏财",
+        "position": "year_branch_hidden",
+        "rank": 4
+      }
+    ],
+    "interactions": [
+      {
+        "a": "七杀",
+        "b": "偏印",
+        "relation": "化",
+        "note_cn": "杀印相生"
+      },
+      {
+        "a": "七杀",
+        "b": "劫财",
+        "relation": "克",
+        "note_cn": "官杀攻身"
+      },
+      {
+        "a": "七杀",
+        "b": "偏财",
+        "relation": "生",
+        "note_cn": "财官相生"
+      },
+      {
+        "a": "偏印",
+        "b": "劫财",
+        "relation": "生",
+        "note_cn": "印生身"
+      },
+      {
+        "a": "偏印",
+        "b": "偏财",
+        "relation": "克",
+        "note_cn": "财破印"
+      },
+      {
+        "a": "劫财",
+        "b": "偏财",
+        "relation": "克",
+        "note_cn": "比劫夺财"
+      }
+    ],
+    "annual_next3": [
+      {
+        "year": 2026,
+        "stem": "丙",
+        "branch": "午",
+        "ten_god": "正印"
+      },
+      {
+        "year": 2027,
+        "stem": "丁",
+        "branch": "未",
+        "ten_god": "偏印"
+      },
+      {
+        "year": 2028,
+        "stem": "戊",
+        "branch": "申",
+        "ten_god": "劫财"
+      }
+    ],
+    "relationship": {
+      "spouse_palace": {
+        "branch": "卯",
+        "hidden_ten_gods": [
+          "七杀"
+        ]
+      }
+    },
+    "career": {
+      "authority": 4,
+      "wealth": 0,
+      "resource": 1,
+      "output": 0,
+      "peer": 3
+    }
+  },
+  {
+    "chart_id": "6f1a2b3c-0002-4a02-9a02-000000000002",
+    "partial": false,
+    "key_ten_gods": [
+      {
+        "name": "劫财",
+        "position": "month_branch_main",
+        "rank": 1
+      },
+      {
+        "name": "偏财",
+        "position": "month_stem",
+        "rank": 2
+      },
+      {
+        "name": "食神",
+        "position": "year_stem",
+        "rank": 3
+      },
+      {
+        "name": "伤官",
+        "position": "year_branch_hidden",
+        "rank": 4
+      }
+    ],
+    "interactions": [
+      {
+        "a": "劫财",
+        "b": "偏财",
+        "relation": "克",
+        "note_cn": "比劫夺财"
+      },
+      {
+        "a": "劫财",
+        "b": "食神",
+        "relation": "生",
+        "note_cn": "比劫生食伤"
+      },
+      {
+        "a": "劫财",
+        "b": "伤官",
+        "relation": "生",
+        "note_cn": "比劫生食伤"
+      },
+      {
+        "a": "偏财",
+        "b": "食神",
+        "relation": "生",
+        "note_cn": "食伤生财"
+      },
+      {
+        "a": "偏财",
+        "b": "伤官",
+        "relation": "生",
+        "note_cn": "食伤生财"
+      },
+      {
+        "a": "食神",
+        "b": "伤官",
+        "relation": "竞",
+        "note_cn": "同气并立"
+      }
+    ],
+    "annual_next3": [
+      {
+        "year": 2026,
+        "stem": "丙",
+        "branch": "午",
+        "ten_god": "正财"
+      },
+      {
+        "year": 2027,
+        "stem": "丁",
+        "branch": "未",
+        "ten_god": "偏财"
+      },
+      {
+        "year": 2028,
+        "stem": "戊",
+        "branch": "申",
+        "ten_god": "正官"
+      }
+    ],
+    "relationship": {
+      "spouse_palace": {
+        "branch": "卯",
+        "hidden_ten_gods": [
+          "食神"
+        ]
+      }
+    },
+    "career": {
+      "authority": 1,
+      "wealth": 1,
+      "resource": 0,
+      "output": 2,
+      "peer": 4
+    }
+  },
+  {
+    "chart_id": "6f1a2b3c-0003-4a03-9a03-000000000003",
+    "partial": true,
+    "key_ten_gods": [
+      {
+        "name": "伤官",
+        "position": "month_branch_main",
+        "rank": 1
+      },
+      {
+        "name": "正印",
+        "position": "month_stem",
+        "rank": 2
+      },
+      {
+        "name": "正财",
+        "position": "year_stem",
+        "rank": 3
+      },
+      {
+        "name": "食神",
+        "position": "year_branch_hidden",
+        "rank": 4
+      }
+    ],
+    "interactions": [
+      {
+        "a": "伤官",
+        "b": "正印",
+        "relation": "克",
+        "note_cn": "印制食伤"
+      },
+      {
+        "a": "伤官",
+        "b": "正财",
+        "relation": "生",
+        "note_cn": "食伤生财"
+      },
+      {
+        "a": "伤官",
+        "b": "食神",
+        "relation": "竞",
+        "note_cn": "同气并立"
+      },
+      {
+        "a": "正印",
+        "b": "正财",
+        "relation": "克",
+        "note_cn": "财破印"
+      },
+      {
+        "a": "正印",
+        "b": "食神",
+        "relation": "克",
+        "note_cn": "印制食伤"
+      },
+      {
+        "a": "正财",
+        "b": "食神",
+        "relation": "生",
+        "note_cn": "食伤生财"
+      }
+    ],
+    "annual_next3": [
+      {
+        "year": 2026,
+        "stem": "丙",
+        "branch": "午",
+        "ten_god": "比肩"
+      },
+      {
+        "year": 2027,
+        "stem": "丁",
+        "branch": "未",
+        "ten_god": "劫财"
+      },
+      {
+        "year": 2028,
+        "stem": "戊",
+        "branch": "申",
+        "ten_god": "食神"
+      }
+    ],
+    "relationship": {
+      "spouse_palace": {
+        "branch": "戌",
+        "hidden_ten_gods": [
+          "食神",
+          "正财",
+          "劫财"
+        ]
+      }
+    },
+    "career": {
+      "authority": 0,
+      "wealth": 1,
+      "resource": 1,
+      "output": 2,
+      "peer": 2
+    }
+  }
+]

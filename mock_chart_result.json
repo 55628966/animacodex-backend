@@ -1,0 +1,472 @@
+[
+  {
+    "chart_id": "6f1a2b3c-0001-4a01-9a01-000000000001",
+    "true_solar_time": {
+      "datetime": "1988-03-25T06:09:05",
+      "correction_minutes": -21,
+      "equation_of_time_minutes": -7
+    },
+    "pillars": {
+      "year": {
+        "stem": "戊",
+        "branch": "辰",
+        "hidden_stems": [
+          "戊",
+          "乙",
+          "癸"
+        ],
+        "ten_god_stem": "劫财",
+        "ten_gods_hidden": [
+          "劫财",
+          "七杀",
+          "偏财"
+        ]
+      },
+      "month": {
+        "stem": "乙",
+        "branch": "卯",
+        "hidden_stems": [
+          "乙"
+        ],
+        "ten_god_stem": "七杀",
+        "ten_gods_hidden": [
+          "七杀"
+        ]
+      },
+      "day": {
+        "stem": "己",
+        "branch": "卯",
+        "hidden_stems": [
+          "乙"
+        ],
+        "ten_god_stem": "比肩",
+        "ten_gods_hidden": [
+          "七杀"
+        ],
+        "note": "day_master"
+      },
+      "hour": {
+        "stem": "丁",
+        "branch": "卯",
+        "hidden_stems": [
+          "乙"
+        ],
+        "ten_god_stem": "偏印",
+        "ten_gods_hidden": [
+          "七杀"
+        ]
+      }
+    },
+    "day_master": {
+      "stem": "己",
+      "element": "earth",
+      "yin_yang": "yin"
+    },
+    "five_elements": {
+      "wood": 4,
+      "fire": 1,
+      "earth": 3,
+      "metal": 0,
+      "water": 0
+    },
+    "luck_cycles": {
+      "direction": "forward",
+      "start_age": {
+        "years": 3,
+        "months": 6
+      },
+      "start_date": "1991-10-10",
+      "cycles": [
+        {
+          "index": 1,
+          "stem": "丙",
+          "branch": "辰",
+          "start_year": 1991,
+          "end_year": 2001,
+          "ten_god": "正印"
+        },
+        {
+          "index": 2,
+          "stem": "丁",
+          "branch": "巳",
+          "start_year": 2001,
+          "end_year": 2011,
+          "ten_god": "偏印"
+        },
+        {
+          "index": 3,
+          "stem": "戊",
+          "branch": "午",
+          "start_year": 2011,
+          "end_year": 2021,
+          "ten_god": "劫财"
+        },
+        {
+          "index": 4,
+          "stem": "己",
+          "branch": "未",
+          "start_year": 2021,
+          "end_year": 2031,
+          "ten_god": "比肩"
+        },
+        {
+          "index": 5,
+          "stem": "庚",
+          "branch": "申",
+          "start_year": 2031,
+          "end_year": 2041,
+          "ten_god": "伤官"
+        },
+        {
+          "index": 6,
+          "stem": "辛",
+          "branch": "酉",
+          "start_year": 2041,
+          "end_year": 2051,
+          "ten_god": "食神"
+        },
+        {
+          "index": 7,
+          "stem": "壬",
+          "branch": "戌",
+          "start_year": 2051,
+          "end_year": 2061,
+          "ten_god": "正财"
+        },
+        {
+          "index": 8,
+          "stem": "癸",
+          "branch": "亥",
+          "start_year": 2061,
+          "end_year": 2071,
+          "ten_god": "偏财"
+        }
+      ]
+    },
+    "current": {
+      "luck_cycle_index": 4,
+      "annual": {
+        "year": 2026,
+        "stem": "丙",
+        "branch": "午"
+      }
+    },
+    "meta": {
+      "algo_version": "1.0.0",
+      "solar_terms_source": "Swiss Ephemeris (pyswisseph, Moshier模型): 太阳视黄经15°倍数交越UT时刻, 秒级精度, 覆盖1800-2399"
+    }
+  },
+  {
+    "chart_id": "6f1a2b3c-0002-4a02-9a02-000000000002",
+    "true_solar_time": {
+      "datetime": "1995-11-08T20:27:21",
+      "correction_minutes": -48,
+      "equation_of_time_minutes": 16
+    },
+    "pillars": {
+      "year": {
+        "stem": "乙",
+        "branch": "亥",
+        "hidden_stems": [
+          "壬",
+          "甲"
+        ],
+        "ten_god_stem": "食神",
+        "ten_gods_hidden": [
+          "劫财",
+          "伤官"
+        ]
+      },
+      "month": {
+        "stem": "丁",
+        "branch": "亥",
+        "hidden_stems": [
+          "壬",
+          "甲"
+        ],
+        "ten_god_stem": "偏财",
+        "ten_gods_hidden": [
+          "劫财",
+          "伤官"
+        ]
+      },
+      "day": {
+        "stem": "癸",
+        "branch": "卯",
+        "hidden_stems": [
+          "乙"
+        ],
+        "ten_god_stem": "比肩",
+        "ten_gods_hidden": [
+          "食神"
+        ],
+        "note": "day_master"
+      },
+      "hour": {
+        "stem": "壬",
+        "branch": "戌",
+        "hidden_stems": [
+          "戊",
+          "辛",
+          "丁"
+        ],
+        "ten_god_stem": "劫财",
+        "ten_gods_hidden": [
+          "正官",
+          "偏印",
+          "偏财"
+        ]
+      }
+    },
+    "day_master": {
+      "stem": "癸",
+      "element": "water",
+      "yin_yang": "yin"
+    },
+    "five_elements": {
+      "wood": 2,
+      "fire": 1,
+      "earth": 1,
+      "metal": 0,
+      "water": 4
+    },
+    "luck_cycles": {
+      "direction": "forward",
+      "start_age": {
+        "years": 9,
+        "months": 8
+      },
+      "start_date": "2005-07-13",
+      "cycles": [
+        {
+          "index": 1,
+          "stem": "戊",
+          "branch": "子",
+          "start_year": 2005,
+          "end_year": 2015,
+          "ten_god": "正官"
+        },
+        {
+          "index": 2,
+          "stem": "己",
+          "branch": "丑",
+          "start_year": 2015,
+          "end_year": 2025,
+          "ten_god": "七杀"
+        },
+        {
+          "index": 3,
+          "stem": "庚",
+          "branch": "寅",
+          "start_year": 2025,
+          "end_year": 2035,
+          "ten_god": "正印"
+        },
+        {
+          "index": 4,
+          "stem": "辛",
+          "branch": "卯",
+          "start_year": 2035,
+          "end_year": 2045,
+          "ten_god": "偏印"
+        },
+        {
+          "index": 5,
+          "stem": "壬",
+          "branch": "辰",
+          "start_year": 2045,
+          "end_year": 2055,
+          "ten_god": "劫财"
+        },
+        {
+          "index": 6,
+          "stem": "癸",
+          "branch": "巳",
+          "start_year": 2055,
+          "end_year": 2065,
+          "ten_god": "比肩"
+        },
+        {
+          "index": 7,
+          "stem": "甲",
+          "branch": "午",
+          "start_year": 2065,
+          "end_year": 2075,
+          "ten_god": "伤官"
+        },
+        {
+          "index": 8,
+          "stem": "乙",
+          "branch": "未",
+          "start_year": 2075,
+          "end_year": 2085,
+          "ten_god": "食神"
+        }
+      ]
+    },
+    "current": {
+      "luck_cycle_index": 3,
+      "annual": {
+        "year": 2026,
+        "stem": "丙",
+        "branch": "午"
+      }
+    },
+    "meta": {
+      "algo_version": "1.0.0",
+      "solar_terms_source": "Swiss Ephemeris (pyswisseph, Moshier模型): 太阳视黄经15°倍数交越UT时刻, 秒级精度, 覆盖1800-2399"
+    }
+  },
+  {
+    "chart_id": "6f1a2b3c-0003-4a03-9a03-000000000003",
+    "true_solar_time": null,
+    "pillars": {
+      "year": {
+        "stem": "辛",
+        "branch": "巳",
+        "hidden_stems": [
+          "丙",
+          "庚",
+          "戊"
+        ],
+        "ten_god_stem": "正财",
+        "ten_gods_hidden": [
+          "比肩",
+          "偏财",
+          "食神"
+        ]
+      },
+      "month": {
+        "stem": "乙",
+        "branch": "未",
+        "hidden_stems": [
+          "己",
+          "丁",
+          "乙"
+        ],
+        "ten_god_stem": "正印",
+        "ten_gods_hidden": [
+          "伤官",
+          "劫财",
+          "正印"
+        ]
+      },
+      "day": {
+        "stem": "丙",
+        "branch": "戌",
+        "hidden_stems": [
+          "戊",
+          "辛",
+          "丁"
+        ],
+        "ten_god_stem": "比肩",
+        "ten_gods_hidden": [
+          "食神",
+          "正财",
+          "劫财"
+        ],
+        "note": "day_master"
+      },
+      "hour": null
+    },
+    "day_master": {
+      "stem": "丙",
+      "element": "fire",
+      "yin_yang": "yang"
+    },
+    "five_elements": {
+      "wood": 1,
+      "fire": 2,
+      "earth": 2,
+      "metal": 1,
+      "water": 0
+    },
+    "luck_cycles": {
+      "direction": "backward",
+      "start_age": {
+        "years": 5,
+        "months": 0
+      },
+      "start_date": "2006-08-05",
+      "cycles": [
+        {
+          "index": 1,
+          "stem": "甲",
+          "branch": "午",
+          "start_year": 2006,
+          "end_year": 2016,
+          "ten_god": "偏印"
+        },
+        {
+          "index": 2,
+          "stem": "癸",
+          "branch": "巳",
+          "start_year": 2016,
+          "end_year": 2026,
+          "ten_god": "正官"
+        },
+        {
+          "index": 3,
+          "stem": "壬",
+          "branch": "辰",
+          "start_year": 2026,
+          "end_year": 2036,
+          "ten_god": "七杀"
+        },
+        {
+          "index": 4,
+          "stem": "辛",
+          "branch": "卯",
+          "start_year": 2036,
+          "end_year": 2046,
+          "ten_god": "正财"
+        },
+        {
+          "index": 5,
+          "stem": "庚",
+          "branch": "寅",
+          "start_year": 2046,
+          "end_year": 2056,
+          "ten_god": "偏财"
+        },
+        {
+          "index": 6,
+          "stem": "己",
+          "branch": "丑",
+          "start_year": 2056,
+          "end_year": 2066,
+          "ten_god": "伤官"
+        },
+        {
+          "index": 7,
+          "stem": "戊",
+          "branch": "子",
+          "start_year": 2066,
+          "end_year": 2076,
+          "ten_god": "食神"
+        },
+        {
+          "index": 8,
+          "stem": "丁",
+          "branch": "亥",
+          "start_year": 2076,
+          "end_year": 2086,
+          "ten_god": "劫财"
+        }
+      ]
+    },
+    "current": {
+      "luck_cycle_index": 2,
+      "annual": {
+        "year": 2026,
+        "stem": "丙",
+        "branch": "午"
+      }
+    },
+    "meta": {
+      "algo_version": "1.0.0",
+      "solar_terms_source": "Swiss Ephemeris (pyswisseph, Moshier模型): 太阳视黄经15°倍数交越UT时刻, 秒级精度, 覆盖1800-2399"
+    },
+    "partial": true
+  }
+]

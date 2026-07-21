@@ -1,0 +1,185 @@
+{
+  "matrix_id": "full_codex_v1_downgrade_matrix",
+  "matrix_version": "1.0.0",
+  "status": "internal_release_spec_not_user_copy",
+  "purpose": "Defines rendering availability when chart inputs or calculation boundaries are incomplete. It never authorizes a new traditional conclusion.",
+  "rendering_order": ["active_condition_boundary", "chart_fact", "allowed_traditional_reading", "reflection_prompt"],
+  "availability_values": ["available", "available_with_boundary", "fact_only", "withheld", "not_generated", "excluded"],
+  "conditions": [
+    {
+      "condition_id": "complete_chart",
+      "machine_signal": { "partial": false, "luck_cycle_convention": ["traditional_male", "traditional_female"] },
+      "scope": "Baseline only; it does not override another active boundary condition.",
+      "module_availability": {
+        "full.01.calculation-profile": "available",
+        "full.02.four-pillars-record": "available",
+        "full.03.day-master-lens": "available",
+        "full.04.seasonal-context": "available",
+        "full.05.five-element-map": "available_with_boundary",
+        "full.06.key-ten-god-vocabulary": "available",
+        "full.07.relation-map": "available_with_boundary",
+        "full.08.cycles-if-chosen": "available_with_boundary",
+        "full.09.solar-month-context": "available_with_boundary",
+        "full.10.work-craft-reflection": "available",
+        "full.11.relationship-reflection": "available",
+        "full.12.boundaries-unknowns": "available",
+        "full.13.trace-source-index": "available",
+        "full.14.readers-closing-notes": "available"
+      },
+      "mandatory_boundary_points": ["Every traditional reading remains symbolic and non-predictive."]
+    },
+    {
+      "condition_id": "hour_unknown_partial_chart",
+      "machine_signal": { "partial": true },
+      "scope": "The hour pillar is unavailable. Do not infer it from a user story, a later answer, or an engagement goal.",
+      "module_overrides": {
+        "full.01.calculation-profile": "available_with_boundary",
+        "full.02.four-pillars-record": "available_with_boundary",
+        "full.03.day-master-lens": "available_with_boundary",
+        "full.04.seasonal-context": "available_with_boundary",
+        "full.05.five-element-map": "available_with_boundary",
+        "full.06.key-ten-god-vocabulary": "available_with_boundary",
+        "full.07.relation-map": "available_with_boundary",
+        "full.08.cycles-if-chosen": "fact_only",
+        "full.09.solar-month-context": "available_with_boundary",
+        "full.10.work-craft-reflection": "available_with_boundary",
+        "full.11.relationship-reflection": "available_with_boundary",
+        "full.12.boundaries-unknowns": "available",
+        "full.13.trace-source-index": "available_with_boundary",
+        "full.14.readers-closing-notes": "available"
+      },
+      "mandatory_boundary_points": [
+        "The hour pillar is not available and is not treated as zero, absent, or negative.",
+        "Any count, interaction, vocabulary item, natal link, or cycle row that depends on the hour is incomplete or withheld as stated by the corresponding field-level availability.",
+        "If an estimated luck-cycle calculation exists, it may be listed only as clearly labelled chart_fact; no cycle reading or cycle-based prompt is rendered."
+      ],
+      "prohibited": ["hour-dependent traditional reading", "invented hour-pillar field", "purchase prompt promising certainty"]
+    },
+    {
+      "condition_id": "luck_cycles_not_applied",
+      "machine_signal": { "luck_cycle_convention": "not_applied" },
+      "scope": "The user chose not to apply a traditional luck-cycle convention. This is a valid report state.",
+      "module_overrides": {
+        "full.08.cycles-if-chosen": "not_generated",
+        "full.12.boundaries-unknowns": "available",
+        "full.13.trace-source-index": "available_with_boundary"
+      },
+      "mandatory_boundary_points": [
+        "No luck-cycle rows, interpretations, timing claims, or prompts are generated.",
+        "The report retains four-pillar content; it does not imply that the chart is broken or less valuable.",
+        "The interface explains that this is a selected calculation convention, not a statement about identity."
+      ],
+      "prohibited": ["asking the reader to disclose gender identity", "using sex as a hidden default", "upsell for a cycle prediction"]
+    },
+    {
+      "condition_id": "near_solar_term_boundary",
+      "machine_signal": { "meta.boundary_notice": "contains_solar_term_proximity" },
+      "scope": "Use only when the engine emits an explicit non-sensitive proximity status. The content layer must not calculate its own proximity label.",
+      "module_overrides": {
+        "full.01.calculation-profile": "available_with_boundary",
+        "full.02.four-pillars-record": "available_with_boundary",
+        "full.04.seasonal-context": "available_with_boundary",
+        "full.09.solar-month-context": "available_with_boundary",
+        "full.12.boundaries-unknowns": "available",
+        "full.13.trace-source-index": "available_with_boundary"
+      },
+      "mandatory_boundary_points": [
+        "State that the calculation is near a solar-term boundary under the declared profile.",
+        "If a separately calculated alternate profile/result exists, link its versioned comparison; otherwise do not invent alternate pillars or outcomes.",
+        "Do not present proximity as danger, urgency, or a reason to purchase more certainty."
+      ],
+      "prohibited": ["uncomputed alternate chart", "event prediction based on the boundary"]
+    },
+    {
+      "condition_id": "near_true_solar_day_or_late_zi_boundary",
+      "machine_signal": { "meta.boundary_notice": "contains_day_boundary_or_late_zi_proximity" },
+      "scope": "Use only from an explicit engine boundary status. It can affect the day pillar under the selected day-boundary convention.",
+      "module_overrides": {
+        "full.01.calculation-profile": "available_with_boundary",
+        "full.02.four-pillars-record": "available_with_boundary",
+        "full.03.day-master-lens": "available_with_boundary",
+        "full.05.five-element-map": "available_with_boundary",
+        "full.06.key-ten-god-vocabulary": "available_with_boundary",
+        "full.07.relation-map": "available_with_boundary",
+        "full.08.cycles-if-chosen": "available_with_boundary",
+        "full.09.solar-month-context": "available_with_boundary",
+        "full.10.work-craft-reflection": "available_with_boundary",
+        "full.11.relationship-reflection": "available_with_boundary",
+        "full.12.boundaries-unknowns": "available",
+        "full.13.trace-source-index": "available_with_boundary"
+      },
+      "mandatory_boundary_points": [
+        "Identify that a declared day-boundary convention is material for this report version.",
+        "Withhold any dependent reading if the required field is not stable in the engine output.",
+        "An alternate convention is a separate versioned calculation, not an editorial rewrite."
+      ],
+      "prohibited": ["claiming one convention proves a personal truth", "silently switching profile"]
+    },
+    {
+      "condition_id": "near_shichen_boundary",
+      "machine_signal": { "meta.boundary_notice": "contains_shichen_proximity" },
+      "scope": "Use only when an engine-generated status says the true-solar time is near a shichen boundary.",
+      "module_overrides": {
+        "full.01.calculation-profile": "available_with_boundary",
+        "full.02.four-pillars-record": "available_with_boundary",
+        "full.05.five-element-map": "available_with_boundary",
+        "full.06.key-ten-god-vocabulary": "available_with_boundary",
+        "full.07.relation-map": "available_with_boundary",
+        "full.08.cycles-if-chosen": "available_with_boundary",
+        "full.09.solar-month-context": "available_with_boundary",
+        "full.10.work-craft-reflection": "available_with_boundary",
+        "full.12.boundaries-unknowns": "available",
+        "full.13.trace-source-index": "available_with_boundary"
+      },
+      "mandatory_boundary_points": [
+        "The hour-dependent portion of the report is boundary-sensitive.",
+        "The current output uses the declared profile; a comparison is possible only through a separately calculated, versioned result.",
+        "No hidden hour, alternative hour, or certainty claim is added by editorial content."
+      ],
+      "prohibited": ["using a narrative clue to choose an hour", "fear/urgency language"]
+    },
+    {
+      "condition_id": "historical_civil_time_uncertainty",
+      "machine_signal": { "meta.boundary_notice": "contains_historical_time_uncertainty" },
+      "scope": "Use when the time-zone/historical-time layer reports uncertainty. The content layer may not infer its own historical exception.",
+      "module_overrides": {
+        "full.01.calculation-profile": "available_with_boundary",
+        "full.02.four-pillars-record": "available_with_boundary",
+        "full.03.day-master-lens": "fact_only",
+        "full.04.seasonal-context": "available_with_boundary",
+        "full.05.five-element-map": "fact_only",
+        "full.06.key-ten-god-vocabulary": "fact_only",
+        "full.07.relation-map": "fact_only",
+        "full.08.cycles-if-chosen": "fact_only",
+        "full.09.solar-month-context": "fact_only",
+        "full.10.work-craft-reflection": "fact_only",
+        "full.11.relationship-reflection": "fact_only",
+        "full.12.boundaries-unknowns": "available",
+        "full.13.trace-source-index": "available_with_boundary",
+        "full.14.readers-closing-notes": "available"
+      },
+      "mandatory_boundary_points": [
+        "State the historical civil-time limitation without exposing raw location or timestamp values.",
+        "Withhold dependent readings until a verified calculation path is available.",
+        "Offer no paid certainty upgrade or human override that guesses the missing time data."
+      ],
+      "prohibited": ["traditional reading on unstable dependent fields", "human fabrication of a historical time"]
+    },
+    {
+      "condition_id": "multiple_active_conditions",
+      "machine_signal": { "rule": "two_or_more_conditions_above_are_active" },
+      "scope": "Combinator rule, applied after individual condition rules.",
+      "resolution": [
+        "Use the most restrictive availability per module: excluded > not_generated > withheld > fact_only > available_with_boundary > available.",
+        "Render every active condition boundary in deterministic condition order; do not merge them into one generic disclaimer.",
+        "A module cannot recover availability because a different condition is favorable."
+      ],
+      "prohibited": ["dropping a limitation for readability", "claiming combined inputs create a special destiny"]
+    }
+  ],
+  "implementation_notes": [
+    "The string-valued machine signals are integration placeholders. Engineering must map them to actual boolean/enumerated API fields before release and add tests for each mapping.",
+    "If a specified boundary signal is absent from the API, the related condition is not silently inferred by the content layer. The module may display only the baseline limitations present in available data.",
+    "This matrix is a release dependency for pages, exports, emails, share cards, and human-review surfaces; channel changes do not relax it."
+  ]
+}

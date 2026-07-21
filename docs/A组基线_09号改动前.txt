@@ -1,0 +1,6 @@
+== 09号A组 改动前基线 ==
+时间: 2026-07-18 17:30
+cross_validation: 5 passed
+regression: 116 passed (114命例+2元)
+api+hour_inference: 35 passed, 1 skipped
+合计: 156 passed, 1 skipped —— 全绿

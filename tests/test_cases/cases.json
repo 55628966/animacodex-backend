@@ -1,0 +1,5953 @@
+{
+ "meta": {
+  "description": "Anima Codex 排盘引擎回归命例库(《01》第三节)。expected由bazi_engine计算并经lunar-python双源核验一致后入库。",
+  "engine_algo_version": "1.0.0",
+  "lunar_python_version": "1.4.8",
+  "generated_by": "scripts/gen_cases.py (随机部分种子20260717)",
+  "generated_at": "2026-07-17",
+  "now_utc_fixed": "2026-07-17T00:00:00+00:00",
+  "blind_zone_rule": "距节气交接±120秒内不做跨库断言; 本库全部命例按距节≥150秒构造, 均为完整双源核验",
+  "source_confirmation": "来源清单已Owner拍板(2026-07-17, 拍板项3): 紫金山天文台《中国天文年历》体系为权威锚 / SwissEph×lunar-python双源准入 / sxtwl第三对照",
+  "total": 114,
+  "category_counts": {
+   "lichun_boundary": 16,
+   "jie_boundary": 22,
+   "zi_hour": 16,
+   "extreme_geo": 10,
+   "luck_quadrant": 16,
+   "start_age_extreme": 8,
+   "hour_unknown": 8,
+   "random_regular": 18
+  }
+ },
+ "cases": [
+  {
+   "id": "case_001",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "1907-02-05",
+    "birth_time": "06:54",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丙午",
+     "month": "辛丑",
+     "day": "乙酉",
+     "hour": "己卯"
+    },
+    "day_master": {
+     "stem": "乙",
+     "element": "wood",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 2,
+     "earth": 2,
+     "metal": 2,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1907-02-05",
+    "first_cycles": [
+     "壬寅",
+     "癸卯",
+     "甲辰"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1907年立春前约4分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1907-02-05T06:40:19对照(sect1); 距最近节286秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_002",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "1907-02-05",
+    "birth_time": "07:02",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丁未",
+     "month": "壬寅",
+     "day": "乙酉",
+     "hour": "己卯"
+    },
+    "day_master": {
+     "stem": "乙",
+     "element": "wood",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 3,
+     "fire": 1,
+     "earth": 2,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 9,
+     "months": 11
+    },
+    "start_date": "1917-01-07",
+    "first_cycles": [
+     "癸卯",
+     "甲辰",
+     "乙巳"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1907年立春后约4分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1907-02-05T06:48:19对照(sect1); 距最近节194秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_003",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "1929-02-04",
+    "birth_time": "14:58",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊辰",
+     "month": "乙丑",
+     "day": "庚辰",
+     "hour": "癸未"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 0,
+     "earth": 5,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1929-02-04",
+    "first_cycles": [
+     "丙寅",
+     "丁卯",
+     "戊辰"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1929年立春前约10分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1929-02-04T14:44:24对照(sect1); 距最近节642秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_004",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "1929-02-04",
+    "birth_time": "15:18",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "己巳",
+     "month": "丙寅",
+     "day": "庚辰",
+     "hour": "甲申"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 2,
+     "earth": 2,
+     "metal": 2,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 9,
+     "months": 11
+    },
+    "start_date": "1939-01-05",
+    "first_cycles": [
+     "丁卯",
+     "戊辰",
+     "己巳"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1929年立春后约10分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1929-02-04T15:04:24对照(sect1); 距最近节558秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_005",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "1950-02-04",
+    "birth_time": "16:20",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "己丑",
+     "month": "丁丑",
+     "day": "庚午",
+     "hour": "甲申"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 2,
+     "earth": 3,
+     "metal": 2,
+     "water": 0
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 9,
+     "months": 9
+    },
+    "start_date": "1959-11-27",
+    "first_cycles": [
+     "丙子",
+     "乙亥",
+     "甲戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1950年立春前约60分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1950-02-04T16:06:24对照(sect1); 距最近节3645秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_006",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "1950-02-04",
+    "birth_time": "18:20",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚寅",
+     "month": "戊寅",
+     "day": "庚午",
+     "hour": "乙酉"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 3,
+     "fire": 1,
+     "earth": 1,
+     "metal": 3,
+     "water": 0
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1950-02-08",
+    "first_cycles": [
+     "丁丑",
+     "丙子",
+     "乙亥"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1950年立春后约60分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1950-02-04T18:06:23对照(sect1); 距最近节3555秒(盲区外); 起运两库差12命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_007",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "1968-02-04",
+    "birth_time": "21:07",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丁未",
+     "month": "癸丑",
+     "day": "甲辰",
+     "hour": "甲戌"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 4,
+     "metal": 0,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 9,
+     "months": 9
+    },
+    "start_date": "1977-11-07",
+    "first_cycles": [
+     "壬子",
+     "辛亥",
+     "庚戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1968年立春前约300分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1968-02-04T20:53:23对照(sect1); 距最近节18024秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_008",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "1968-02-05",
+    "birth_time": "07:07",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊申",
+     "month": "甲寅",
+     "day": "乙巳",
+     "hour": "己卯"
+    },
+    "day_master": {
+     "stem": "乙",
+     "element": "wood",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 4,
+     "fire": 1,
+     "earth": 2,
+     "metal": 1,
+     "water": 0
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1968-02-29",
+    "first_cycles": [
+     "癸丑",
+     "壬子",
+     "辛亥"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1968年立春后约300分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1968-02-05T06:53:20对照(sect1); 距最近节17976秒(盲区外); 起运两库差12命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_009",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "1985-02-04",
+    "birth_time": "04:46",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲子",
+     "month": "丁丑",
+     "day": "甲戌",
+     "hour": "丙寅"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 3,
+     "fire": 2,
+     "earth": 2,
+     "metal": 0,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1985-02-06",
+    "first_cycles": [
+     "戊寅",
+     "己卯",
+     "庚辰"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1985年立春前约25分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1985-02-04T04:32:28对照(sect1); 距最近节1548秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_010",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "1985-02-04",
+    "birth_time": "05:36",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙丑",
+     "month": "戊寅",
+     "day": "甲戌",
+     "hour": "丁卯"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 4,
+     "fire": 1,
+     "earth": 3,
+     "metal": 0,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 9,
+     "months": 10
+    },
+    "start_date": "1995-01-01",
+    "first_cycles": [
+     "己卯",
+     "庚辰",
+     "辛巳"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1985年立春后约25分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1985-02-04T05:22:27对照(sect1); 距最近节1452秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_011",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "2024-02-04",
+    "birth_time": "16:23",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "癸卯",
+     "month": "乙丑",
+     "day": "戊戌",
+     "hour": "庚申"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 0,
+     "earth": 3,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 9,
+     "months": 9
+    },
+    "start_date": "2033-12-01",
+    "first_cycles": [
+     "甲子",
+     "癸亥",
+     "壬戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2024年立春前约4分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2024-02-04T16:09:25对照(sect1); 距最近节248秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_012",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "2024-02-04",
+    "birth_time": "16:31",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲辰",
+     "month": "丙寅",
+     "day": "戊戌",
+     "hour": "庚申"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 3,
+     "metal": 2,
+     "water": 0
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2024-02-04",
+    "first_cycles": [
+     "乙丑",
+     "甲子",
+     "癸亥"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2024年立春后约4分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2024-02-04T16:17:25对照(sect1); 距最近节232秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_013",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "2057-02-03",
+    "birth_time": "15:12",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丙子",
+     "month": "辛丑",
+     "day": "辛卯",
+     "hour": "乙未"
+    },
+    "day_master": {
+     "stem": "辛",
+     "element": "metal",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 2,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2057-02-10",
+    "first_cycles": [
+     "壬寅",
+     "癸卯",
+     "甲辰"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2057年立春前约90分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2057-02-03T14:58:32对照(sect1); 距最近节5445秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_014",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "2057-02-03",
+    "birth_time": "18:12",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丁丑",
+     "month": "壬寅",
+     "day": "辛卯",
+     "hour": "丁酉"
+    },
+    "day_master": {
+     "stem": "辛",
+     "element": "metal",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 2,
+     "earth": 1,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 9,
+     "months": 10
+    },
+    "start_date": "2066-12-24",
+    "first_cycles": [
+     "癸卯",
+     "甲辰",
+     "乙巳"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2057年立春后约90分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2057-02-03T17:58:31对照(sect1); 距最近节5355秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_015",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "2091-02-03",
+    "birth_time": "18:32",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚戌",
+     "month": "己丑",
+     "day": "己丑",
+     "hour": "癸酉"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 0,
+     "earth": 5,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2091-02-23",
+    "first_cycles": [
+     "庚寅",
+     "辛卯",
+     "壬辰"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2091年立春前约240分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2091-02-03T18:18:31对照(sect1); 距最近节14403秒(盲区外); 起运两库差12命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_016",
+   "category": "lichun_boundary",
+   "input": {
+    "birth_date": "2091-02-04",
+    "birth_time": "02:32",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "辛亥",
+     "month": "庚寅",
+     "day": "庚寅",
+     "hour": "丁丑"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 1,
+     "metal": 3,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 9,
+     "months": 10
+    },
+    "start_date": "2100-12-11",
+    "first_cycles": [
+     "辛卯",
+     "壬辰",
+     "癸巳"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2091年立春后约240分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2091-02-04T02:18:28对照(sect1); 距最近节14397秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_017",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "1955-03-06",
+    "birth_time": "16:24",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙未",
+     "month": "戊寅",
+     "day": "丙寅",
+     "hour": "丙申"
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 3,
+     "fire": 2,
+     "earth": 2,
+     "metal": 1,
+     "water": 0
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 9,
+     "months": 11
+    },
+    "start_date": "1965-02-06",
+    "first_cycles": [
+     "丁丑",
+     "丙子",
+     "乙亥"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1955年惊蛰前约6分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1955-03-06T16:12:03对照(sect1); 距最近节416秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_018",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "1955-03-06",
+    "birth_time": "16:36",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙未",
+     "month": "己卯",
+     "day": "丙寅",
+     "hour": "丙申"
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 3,
+     "fire": 2,
+     "earth": 2,
+     "metal": 1,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 10,
+     "months": 0
+    },
+    "start_date": "1965-03-31",
+    "first_cycles": [
+     "庚辰",
+     "辛巳",
+     "壬午"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1955年惊蛰后约6分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1955-03-06T16:24:03对照(sect1); 距最近节304秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_019",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "1963-04-05",
+    "birth_time": "20:03",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "癸卯",
+     "month": "乙卯",
+     "day": "戊寅",
+     "hour": "壬戌"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 4,
+     "fire": 0,
+     "earth": 2,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 10,
+     "months": 0
+    },
+    "start_date": "1973-04-28",
+    "first_cycles": [
+     "甲寅",
+     "癸丑",
+     "壬子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1963年清明前约15分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1963-04-05T19:59:52对照(sect1); 距最近节939秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_020",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "1963-04-05",
+    "birth_time": "20:33",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "癸卯",
+     "month": "丙辰",
+     "day": "戊寅",
+     "hour": "壬戌"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 3,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 10,
+     "months": 2
+    },
+    "start_date": "1973-07-01",
+    "first_cycles": [
+     "丁巳",
+     "戊午",
+     "己未"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1963年清明后约15分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1963-04-05T20:29:52对照(sect1); 距最近节861秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_021",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "1972-05-05",
+    "birth_time": "17:16",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "壬子",
+     "month": "甲辰",
+     "day": "丙申",
+     "hour": "丁酉"
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 2,
+     "earth": 1,
+     "metal": 2,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1972-05-08",
+    "first_cycles": [
+     "乙巳",
+     "丙午",
+     "丁未"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1972年立夏前约45分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1972-05-05T17:19:31对照(sect1); 距最近节2710秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_022",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "1972-05-05",
+    "birth_time": "18:46",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "壬子",
+     "month": "乙巳",
+     "day": "丙申",
+     "hour": "丁酉"
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 3,
+     "earth": 0,
+     "metal": 2,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1972-05-08",
+    "first_cycles": [
+     "甲辰",
+     "癸卯",
+     "壬寅"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1972年立夏后约45分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1972-05-05T18:49:31对照(sect1); 距最近节2690秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_023",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "1980-06-05",
+    "birth_time": "20:55",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚申",
+     "month": "辛巳",
+     "day": "己酉",
+     "hour": "甲戌"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 2,
+     "metal": 4,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1980-06-05",
+    "first_cycles": [
+     "壬午",
+     "癸未",
+     "甲申"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1980年芒种前约8分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1980-06-05T20:56:49对照(sect1); 距最近节525秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_024",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "1980-06-05",
+    "birth_time": "21:11",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚申",
+     "month": "壬午",
+     "day": "己酉",
+     "hour": "乙亥"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 1,
+     "metal": 3,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1980-06-05",
+    "first_cycles": [
+     "辛巳",
+     "庚辰",
+     "己卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1980年芒种后约8分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1980-06-05T21:12:48对照(sect1); 距最近节435秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_025",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "1995-07-07",
+    "birth_time": "20:00",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙亥",
+     "month": "壬午",
+     "day": "己亥",
+     "hour": "甲戌"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 2,
+     "metal": 0,
+     "water": 3
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 10,
+     "months": 5
+    },
+    "start_date": "2005-12-18",
+    "first_cycles": [
+     "辛巳",
+     "庚辰",
+     "己卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1995年小暑前约120分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1995-07-07T19:55:24对照(sect1); 距最近节7259秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_026",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "1995-07-08",
+    "birth_time": "00:00",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙亥",
+     "month": "癸未",
+     "day": "庚子",
+     "hour": "丙子"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 1,
+     "metal": 1,
+     "water": 4
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 10,
+     "months": 5
+    },
+    "start_date": "2005-12-17",
+    "first_cycles": [
+     "甲申",
+     "乙酉",
+     "丙戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1995年小暑后约120分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1995-07-07T23:55:22对照(sect1); 距最近节7141秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_027",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2001-08-07",
+    "birth_time": "18:47",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "辛巳",
+     "month": "乙未",
+     "day": "壬寅",
+     "hour": "己酉"
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 2,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 10,
+     "months": 5
+    },
+    "start_date": "2012-01-25",
+    "first_cycles": [
+     "甲午",
+     "癸巳",
+     "壬辰"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2001年立秋前约5分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2001-08-07T18:40:56对照(sect1); 距最近节321秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_028",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2001-08-07",
+    "birth_time": "18:57",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "辛巳",
+     "month": "丙申",
+     "day": "壬寅",
+     "hour": "己酉"
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 2,
+     "earth": 1,
+     "metal": 3,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 10,
+     "months": 4
+    },
+    "start_date": "2011-12-21",
+    "first_cycles": [
+     "丁酉",
+     "戊戌",
+     "己亥"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2001年立秋后约5分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2001-08-07T18:50:56对照(sect1); 距最近节279秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_029",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2010-09-08",
+    "birth_time": "01:14",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚寅",
+     "month": "甲申",
+     "day": "辛酉",
+     "hour": "己丑"
+    },
+    "day_master": {
+     "stem": "辛",
+     "element": "metal",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 0,
+     "earth": 2,
+     "metal": 4,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2010-09-10",
+    "first_cycles": [
+     "乙酉",
+     "丙戌",
+     "丁亥"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2010年白露前约30分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2010-09-08T01:15:46对照(sect1); 距最近节1841秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_030",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2010-09-08",
+    "birth_time": "02:14",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚寅",
+     "month": "乙酉",
+     "day": "辛酉",
+     "hour": "己丑"
+    },
+    "day_master": {
+     "stem": "辛",
+     "element": "metal",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 0,
+     "earth": 2,
+     "metal": 4,
+     "water": 0
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2010-09-10",
+    "first_cycles": [
+     "甲申",
+     "癸未",
+     "壬午"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2010年白露后约30分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2010-09-08T02:15:47对照(sect1); 距最近节1759秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_031",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2018-10-08",
+    "birth_time": "16:04",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊戌",
+     "month": "辛酉",
+     "day": "癸酉",
+     "hour": "庚申"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 0,
+     "earth": 2,
+     "metal": 5,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2018-10-08",
+    "first_cycles": [
+     "壬戌",
+     "癸亥",
+     "甲子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2018年寒露前约10分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2018-10-08T16:16:35对照(sect1); 距最近节643秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_032",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2018-10-08",
+    "birth_time": "16:24",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊戌",
+     "month": "壬戌",
+     "day": "癸酉",
+     "hour": "庚申"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 0,
+     "earth": 3,
+     "metal": 3,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2018-10-08",
+    "first_cycles": [
+     "辛酉",
+     "庚申",
+     "己未"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2018年寒露后约10分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2018-10-08T16:36:36对照(sect1); 距最近节557秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_033",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2030-11-07",
+    "birth_time": "16:48",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚戌",
+     "month": "丙戌",
+     "day": "丙午",
+     "hour": "丁酉"
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 4,
+     "earth": 2,
+     "metal": 2,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2030-11-08",
+    "first_cycles": [
+     "丁亥",
+     "戊子",
+     "己丑"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2030年立冬前约20分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2030-11-07T17:04:11对照(sect1); 距最近节1243秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_034",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2030-11-07",
+    "birth_time": "17:28",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚戌",
+     "month": "丁亥",
+     "day": "丙午",
+     "hour": "丁酉"
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 4,
+     "earth": 1,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2030-11-08",
+    "first_cycles": [
+     "丙戌",
+     "乙酉",
+     "甲申"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2030年立冬后约20分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2030-11-07T17:44:10对照(sect1); 距最近节1157秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_035",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2050-12-07",
+    "birth_time": "06:35",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚午",
+     "month": "丁亥",
+     "day": "辛酉",
+     "hour": "辛卯"
+    },
+    "day_master": {
+     "stem": "辛",
+     "element": "metal",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 2,
+     "earth": 0,
+     "metal": 4,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2050-12-07",
+    "first_cycles": [
+     "戊子",
+     "己丑",
+     "庚寅"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2050年大雪前约6分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2050-12-07T06:43:36对照(sect1); 距最近节411秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_036",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2050-12-07",
+    "birth_time": "06:47",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚午",
+     "month": "戊子",
+     "day": "辛酉",
+     "hour": "辛卯"
+    },
+    "day_master": {
+     "stem": "辛",
+     "element": "metal",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 1,
+     "metal": 4,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2050-12-07",
+    "first_cycles": [
+     "丁亥",
+     "丙戌",
+     "乙酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2050年大雪后约6分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2050-12-07T06:55:36对照(sect1); 距最近节309秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_037",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2066-01-05",
+    "birth_time": "08:15",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙酉",
+     "month": "戊子",
+     "day": "己酉",
+     "hour": "戊辰"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 0,
+     "earth": 4,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 9,
+     "months": 9
+    },
+    "start_date": "2075-10-26",
+    "first_cycles": [
+     "丁亥",
+     "丙戌",
+     "乙酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2066年小寒前约60分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2066-01-05T08:10:32对照(sect1); 距最近节3615秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_038",
+   "category": "jie_boundary",
+   "input": {
+    "birth_date": "2066-01-05",
+    "birth_time": "10:15",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙酉",
+     "month": "己丑",
+     "day": "己酉",
+     "hour": "己巳"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 4,
+     "metal": 2,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 9,
+     "months": 9
+    },
+    "start_date": "2075-10-27",
+    "first_cycles": [
+     "庚寅",
+     "辛卯",
+     "壬辰"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2066年小寒后约60分钟; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2066-01-05T10:10:30对照(sect1); 距最近节3585秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_039_a",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "1975-03-08",
+    "birth_time": "23:30",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙卯",
+     "month": "己卯",
+     "day": "甲寅",
+     "hour": "甲子"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 6,
+     "fire": 0,
+     "earth": 1,
+     "metal": 0,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 9
+    },
+    "start_date": "1975-12-30",
+    "first_cycles": [
+     "戊寅",
+     "丁丑",
+     "丙子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时23:18:34(晚子时23:00-24:00); 流派: late_zi_new_day=true换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1975-03-08T23:18:34对照(sect1); 距最近节210254秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_039_b",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "1975-03-08",
+    "birth_time": "23:30",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": false
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙卯",
+     "month": "己卯",
+     "day": "癸丑",
+     "hour": "甲子"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 4,
+     "fire": 0,
+     "earth": 2,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 9
+    },
+    "start_date": "1975-12-30",
+    "first_cycles": [
+     "戊寅",
+     "丁丑",
+     "丙子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时23:18:34(晚子时23:00-24:00); 流派: late_zi_new_day=false不换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1975-03-08T23:18:34对照(sect2); 距最近节210254秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_040_a",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "1984-10-01",
+    "birth_time": "23:40",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲子",
+     "month": "癸酉",
+     "day": "己巳",
+     "hour": "甲子"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 1,
+     "metal": 1,
+     "water": 3
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 8,
+     "months": 0
+    },
+    "start_date": "1992-10-23",
+    "first_cycles": [
+     "壬申",
+     "辛未",
+     "庚午"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时23:50:36(晚子时23:00-24:00); 流派: late_zi_new_day=true换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1984-10-01T23:50:36对照(sect1); 距最近节558156秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_040_b",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "1984-10-01",
+    "birth_time": "23:40",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": false
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲子",
+     "month": "癸酉",
+     "day": "戊辰",
+     "hour": "甲子"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 0,
+     "earth": 2,
+     "metal": 1,
+     "water": 3
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 8,
+     "months": 0
+    },
+    "start_date": "1992-10-23",
+    "first_cycles": [
+     "壬申",
+     "辛未",
+     "庚午"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时23:50:36(晚子时23:00-24:00); 流派: late_zi_new_day=false不换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1984-10-01T23:50:36对照(sect2); 距最近节558156秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_041_a",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "2000-12-31",
+    "birth_time": "23:25",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚辰",
+     "month": "戊子",
+     "day": "甲子",
+     "hour": "甲子"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 0,
+     "earth": 2,
+     "metal": 1,
+     "water": 3
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 1,
+     "months": 6
+    },
+    "start_date": "2002-07-17",
+    "first_cycles": [
+     "己丑",
+     "庚寅",
+     "辛卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时23:22:28(晚子时23:00-24:00); 流派: late_zi_new_day=true换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2000-12-31T23:22:28对照(sect1); 距最近节401056秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_041_b",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "2000-12-31",
+    "birth_time": "23:25",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": false
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚辰",
+     "month": "戊子",
+     "day": "癸亥",
+     "hour": "甲子"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 0,
+     "earth": 2,
+     "metal": 1,
+     "water": 4
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 1,
+     "months": 6
+    },
+    "start_date": "2002-07-17",
+    "first_cycles": [
+     "己丑",
+     "庚寅",
+     "辛卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时23:22:28(晚子时23:00-24:00); 流派: late_zi_new_day=false不换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2000-12-31T23:22:28对照(sect2); 距最近节401056秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_042_a",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "1958-06-21",
+    "birth_time": "23:35",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊戌",
+     "month": "戊午",
+     "day": "庚午",
+     "hour": "丙子"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 3,
+     "earth": 3,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 5,
+     "months": 1
+    },
+    "start_date": "1963-08-11",
+    "first_cycles": [
+     "丁巳",
+     "丙辰",
+     "乙卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时23:33:38(晚子时23:00-24:00); 流派: late_zi_new_day=true换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1958-06-21T23:33:38对照(sect1); 距最近节1333370秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_042_b",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "1958-06-21",
+    "birth_time": "23:35",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": false
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊戌",
+     "month": "戊午",
+     "day": "己巳",
+     "hour": "丙子"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 3,
+     "earth": 4,
+     "metal": 0,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 5,
+     "months": 1
+    },
+    "start_date": "1963-08-11",
+    "first_cycles": [
+     "丁巳",
+     "丙辰",
+     "乙卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时23:33:38(晚子时23:00-24:00); 流派: late_zi_new_day=false不换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1958-06-21T23:33:38对照(sect2); 距最近节1333370秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_043_a",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "2012-07-15",
+    "birth_time": "00:30",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "壬辰",
+     "month": "丁未",
+     "day": "丁丑",
+     "hour": "庚子"
+    },
+    "day_master": {
+     "stem": "丁",
+     "element": "fire",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 2,
+     "earth": 3,
+     "metal": 1,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 7,
+     "months": 9
+    },
+    "start_date": "2020-05-05",
+    "first_cycles": [
+     "戊申",
+     "己酉",
+     "庚戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时00:24:15(早子时00:00-01:00); 流派: late_zi_new_day=true换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2012-07-15T00:24:15对照(sect1); 距最近节690556秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_043_b",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "2012-07-15",
+    "birth_time": "00:30",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": false
+   },
+   "expected": {
+    "pillars": {
+     "year": "壬辰",
+     "month": "丁未",
+     "day": "丁丑",
+     "hour": "庚子"
+    },
+    "day_master": {
+     "stem": "丁",
+     "element": "fire",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 2,
+     "earth": 3,
+     "metal": 1,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 7,
+     "months": 9
+    },
+    "start_date": "2020-05-05",
+    "first_cycles": [
+     "戊申",
+     "己酉",
+     "庚戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时00:24:15(早子时00:00-01:00); 流派: late_zi_new_day=false不换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2012-07-15T00:24:15对照(sect2); 距最近节690556秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_044_a",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "2025-01-01",
+    "birth_time": "00:20",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲辰",
+     "month": "丙子",
+     "day": "庚午",
+     "hour": "丙子"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 3,
+     "earth": 1,
+     "metal": 1,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 8,
+     "months": 4
+    },
+    "start_date": "2033-05-06",
+    "first_cycles": [
+     "乙亥",
+     "甲戌",
+     "癸酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时00:17:27(早子时00:00-01:00); 流派: late_zi_new_day=true换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2025-01-01T00:17:27对照(sect1); 距最近节382367秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_044_b",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "2025-01-01",
+    "birth_time": "00:20",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": false
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲辰",
+     "month": "丙子",
+     "day": "庚午",
+     "hour": "丙子"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 3,
+     "earth": 1,
+     "metal": 1,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 8,
+     "months": 4
+    },
+    "start_date": "2033-05-06",
+    "first_cycles": [
+     "乙亥",
+     "甲戌",
+     "癸酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时00:17:27(早子时00:00-01:00); 流派: late_zi_new_day=false不换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2025-01-01T00:17:27对照(sect2); 距最近节382367秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_045_a",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "2040-04-15",
+    "birth_time": "00:40",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚申",
+     "month": "庚辰",
+     "day": "癸酉",
+     "hour": "壬子"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 0,
+     "earth": 1,
+     "metal": 4,
+     "water": 3
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 6,
+     "months": 8
+    },
+    "start_date": "2047-01-06",
+    "first_cycles": [
+     "辛巳",
+     "壬午",
+     "癸未"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时00:39:44(早子时00:00-01:00); 流派: late_zi_new_day=true换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2040-04-15T00:39:44对照(sect1); 距最近节909270秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_045_b",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "2040-04-15",
+    "birth_time": "00:40",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": false
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚申",
+     "month": "庚辰",
+     "day": "癸酉",
+     "hour": "壬子"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 0,
+     "earth": 1,
+     "metal": 4,
+     "water": 3
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 6,
+     "months": 8
+    },
+    "start_date": "2047-01-06",
+    "first_cycles": [
+     "辛巳",
+     "壬午",
+     "癸未"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时00:39:44(早子时00:00-01:00); 流派: late_zi_new_day=false不换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2040-04-15T00:39:44对照(sect2); 距最近节909270秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_046_a",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "1995-09-09",
+    "birth_time": "00:25",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙亥",
+     "month": "乙酉",
+     "day": "癸卯",
+     "hour": "壬子"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 3,
+     "fire": 0,
+     "earth": 0,
+     "metal": 1,
+     "water": 4
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 10,
+     "months": 0
+    },
+    "start_date": "2005-09-19",
+    "first_cycles": [
+     "丙戌",
+     "丁亥",
+     "戊子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时00:27:07(早子时00:00-01:00); 流派: late_zi_new_day=true换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1995-09-09T00:27:07对照(sect1); 距最近节48987秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_046_b",
+   "category": "zi_hour",
+   "input": {
+    "birth_date": "1995-09-09",
+    "birth_time": "00:25",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": false
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙亥",
+     "month": "乙酉",
+     "day": "癸卯",
+     "hour": "壬子"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 3,
+     "fire": 0,
+     "earth": 0,
+     "metal": 1,
+     "water": 4
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 10,
+     "months": 0
+    },
+    "start_date": "2005-09-19",
+    "first_cycles": [
+     "丙戌",
+     "丁亥",
+     "戊子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "真太阳时00:27:07(早子时00:00-01:00); 流派: late_zi_new_day=false不换日; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1995-09-09T00:27:07对照(sect2); 距最近节48987秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_047",
+   "category": "extreme_geo",
+   "input": {
+    "birth_date": "1970-05-10",
+    "birth_time": "08:30",
+    "timezone": "Asia/Shanghai",
+    "lat": 39.47,
+    "lng": 75.99,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚戌",
+     "month": "辛巳",
+     "day": "庚寅",
+     "hour": "己卯"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 2,
+     "metal": 3,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 9,
+     "months": 0
+    },
+    "start_date": "1979-05-21",
+    "first_cycles": [
+     "壬午",
+     "癸未",
+     "甲申"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "喀什; 真太阳时修正-172.2分钟, TST=1970-05-10T05:37:45; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1970-05-10T05:37:45对照(sect1); 距最近节352573秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_048",
+   "category": "extreme_geo",
+   "input": {
+    "birth_date": "2018-01-01",
+    "birth_time": "01:30",
+    "timezone": "Asia/Shanghai",
+    "lat": 39.47,
+    "lng": 75.99,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丁酉",
+     "month": "壬子",
+     "day": "壬辰",
+     "hour": "辛亥"
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 1,
+     "earth": 1,
+     "metal": 2,
+     "water": 4
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 1,
+     "months": 6
+    },
+    "start_date": "2019-07-22",
+    "first_cycles": [
+     "癸丑",
+     "甲寅",
+     "乙卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "喀什(真太阳时跨日回前一天); 真太阳时修正-178.6分钟, TST=2017-12-31T22:31:24; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2017-12-31T22:31:24对照(sect1); 距最近节404324秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_049",
+   "category": "extreme_geo",
+   "input": {
+    "birth_date": "2005-11-20",
+    "birth_time": "21:00",
+    "timezone": "Asia/Shanghai",
+    "lat": 43.83,
+    "lng": 87.62,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙酉",
+     "month": "丁亥",
+     "day": "戊申",
+     "hour": "壬戌"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 2,
+     "metal": 2,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 4,
+     "months": 4
+    },
+    "start_date": "2010-04-15",
+    "first_cycles": [
+     "丙戌",
+     "乙酉",
+     "甲申"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "乌鲁木齐; 真太阳时修正-115.5分钟, TST=2005-11-20T19:04:32; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2005-11-20T19:04:32对照(sect1); 距最近节1142253秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_050",
+   "category": "extreme_geo",
+   "input": {
+    "birth_date": "1999-08-18",
+    "birth_time": "06:10",
+    "timezone": "Asia/Shanghai",
+    "lat": 29.65,
+    "lng": 91.13,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "己卯",
+     "month": "壬申",
+     "day": "壬寅",
+     "hour": "壬寅"
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 3,
+     "fire": 0,
+     "earth": 1,
+     "metal": 1,
+     "water": 3
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 7,
+     "months": 0
+    },
+    "start_date": "2006-09-07",
+    "first_cycles": [
+     "癸酉",
+     "甲戌",
+     "乙亥"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "拉萨; 真太阳时修正-119.9分钟, TST=1999-08-18T04:10:08; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1999-08-18T04:10:08对照(sect1); 距最近节860153秒(盲区外); 起运两库差12命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_051",
+   "category": "extreme_geo",
+   "input": {
+    "birth_date": "1988-06-15",
+    "birth_time": "14:00",
+    "timezone": "Atlantic/Reykjavik",
+    "lat": 64.15,
+    "lng": -21.94,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊辰",
+     "month": "戊午",
+     "day": "辛丑",
+     "hour": "甲午"
+    },
+    "day_master": {
+     "stem": "辛",
+     "element": "metal",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 2,
+     "earth": 4,
+     "metal": 1,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 7,
+     "months": 1
+    },
+    "start_date": "1995-07-22",
+    "first_cycles": [
+     "己未",
+     "庚申",
+     "辛酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "雷克雅未克(高纬); 真太阳时修正-87.9分钟, TST=1988-06-15T12:32:04; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1988-06-15T12:32:04对照(sect1); 距最近节873906秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_052",
+   "category": "extreme_geo",
+   "input": {
+    "birth_date": "2020-12-21",
+    "birth_time": "00:10",
+    "timezone": "Atlantic/Reykjavik",
+    "lat": 64.15,
+    "lng": -21.94,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚子",
+     "month": "戊子",
+     "day": "丁酉",
+     "hour": "辛亥"
+    },
+    "day_master": {
+     "stem": "丁",
+     "element": "fire",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 1,
+     "earth": 1,
+     "metal": 3,
+     "water": 3
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 4,
+     "months": 9
+    },
+    "start_date": "2025-10-01",
+    "first_cycles": [
+     "丁亥",
+     "丙戌",
+     "乙酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "雷克雅未克(真太阳时跨日); 真太阳时修正-85.4分钟, TST=2020-12-20T22:44:37; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2020-12-20T22:44:37对照(sect1); 距最近节1238430秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_053",
+   "category": "extreme_geo",
+   "input": {
+    "birth_date": "2003-02-10",
+    "birth_time": "03:00",
+    "timezone": "Pacific/Auckland",
+    "lat": -41.29,
+    "lng": 174.78,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "癸未",
+     "month": "甲寅",
+     "day": "甲寅",
+     "hour": "乙丑"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 5,
+     "fire": 0,
+     "earth": 2,
+     "metal": 0,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 1,
+     "months": 9
+    },
+    "start_date": "2004-11-19",
+    "first_cycles": [
+     "癸丑",
+     "壬子",
+     "辛亥"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "惠灵顿(南半球+夏令时); 真太阳时修正-95.0分钟, TST=2003-02-10T01:25:01; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2003-02-10T01:25:01对照(sect1); 距最近节460479秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_054",
+   "category": "extreme_geo",
+   "input": {
+    "birth_date": "1969-07-20",
+    "birth_time": "22:56",
+    "timezone": "America/New_York",
+    "lat": 40.71,
+    "lng": -74.01,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "己酉",
+     "month": "辛未",
+     "day": "丙申",
+     "hour": "己亥"
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 1,
+     "earth": 3,
+     "metal": 3,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 5,
+     "months": 10
+    },
+    "start_date": "1975-05-31",
+    "first_cycles": [
+     "壬申",
+     "癸酉",
+     "甲戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "纽约(夏令时); 真太阳时修正-62.4分钟, TST=1969-07-20T21:53:38; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1969-07-20T21:53:38对照(sect1); 距最近节1193070秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_055",
+   "category": "extreme_geo",
+   "input": {
+    "birth_date": "1961-01-15",
+    "birth_time": "09:45",
+    "timezone": "Europe/London",
+    "lat": 51.51,
+    "lng": -0.13,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚子",
+     "month": "己丑",
+     "day": "戊申",
+     "hour": "丁巳"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 2,
+     "earth": 3,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 6,
+     "months": 6
+    },
+    "start_date": "1967-08-02",
+    "first_cycles": [
+     "庚寅",
+     "辛卯",
+     "壬辰"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "伦敦; 真太阳时修正-9.1分钟, TST=1961-01-15T09:35:53; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1961-01-15T09:35:53对照(sect1); 距最近节849745秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_056",
+   "category": "extreme_geo",
+   "input": {
+    "birth_date": "1990-12-25",
+    "birth_time": "23:30",
+    "timezone": "America/Sao_Paulo",
+    "lat": -23.55,
+    "lng": -46.63,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚午",
+     "month": "戊子",
+     "day": "甲子",
+     "hour": "乙亥"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 1,
+     "metal": 1,
+     "water": 3
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 6,
+     "months": 2
+    },
+    "start_date": "1997-03-18",
+    "first_cycles": [
+     "丁亥",
+     "丙戌",
+     "乙酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "圣保罗(南半球+夏令时); 真太阳时修正-66.5分钟, TST=1990-12-25T22:23:31; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1990-12-25T22:23:31对照(sect1); 距最近节932287秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_057",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1924-06-15",
+    "birth_time": "10:30",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲子",
+     "month": "庚午",
+     "day": "乙丑",
+     "hour": "辛巳"
+    },
+    "day_master": {
+     "stem": "乙",
+     "element": "wood",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 2,
+     "earth": 1,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 7,
+     "months": 5
+    },
+    "start_date": "1931-11-24",
+    "first_cycles": [
+     "辛未",
+     "壬申",
+     "癸酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "甲子·阳年 × 男: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1924-06-15T10:29:56对照(sect1); 距最近节786509秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_058",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1924-06-15",
+    "birth_time": "10:30",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲子",
+     "month": "庚午",
+     "day": "乙丑",
+     "hour": "辛巳"
+    },
+    "day_master": {
+     "stem": "乙",
+     "element": "wood",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 2,
+     "earth": 1,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 3,
+     "months": 0
+    },
+    "start_date": "1927-06-27",
+    "first_cycles": [
+     "己巳",
+     "戊辰",
+     "丁卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "甲子·阳年 × 女: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1924-06-15T10:29:56对照(sect1); 距最近节786509秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_059",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1937-10-20",
+    "birth_time": "08:00",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丁丑",
+     "month": "庚戌",
+     "day": "庚辰",
+     "hour": "庚辰"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 1,
+     "earth": 4,
+     "metal": 3,
+     "water": 0
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 3,
+     "months": 9
+    },
+    "start_date": "1941-07-24",
+    "first_cycles": [
+     "己酉",
+     "戊申",
+     "丁未"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "丁丑·阴年 × 男: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1937-10-20T08:15:16对照(sect1); 距最近节974945秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_060",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1937-10-20",
+    "birth_time": "08:00",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丁丑",
+     "month": "庚戌",
+     "day": "庚辰",
+     "hour": "庚辰"
+    },
+    "day_master": {
+     "stem": "庚",
+     "element": "metal",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 1,
+     "earth": 4,
+     "metal": 3,
+     "water": 0
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 6,
+     "months": 3
+    },
+    "start_date": "1944-01-29",
+    "first_cycles": [
+     "辛亥",
+     "壬子",
+     "癸丑"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "丁丑·阴年 × 女: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1937-10-20T08:15:16对照(sect1); 距最近节974945秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_061",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1956-03-18",
+    "birth_time": "16:20",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丙申",
+     "month": "辛卯",
+     "day": "甲申",
+     "hour": "壬申"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 0,
+     "metal": 4,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 5,
+     "months": 9
+    },
+    "start_date": "1962-01-12",
+    "first_cycles": [
+     "壬辰",
+     "癸巳",
+     "甲午"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "丙申·阳年 × 男: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1956-03-18T16:11:25对照(sect1); 距最近节1101333秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_062",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1956-03-18",
+    "birth_time": "16:20",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丙申",
+     "month": "辛卯",
+     "day": "甲申",
+     "hour": "壬申"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 0,
+     "metal": 4,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 4,
+     "months": 2
+    },
+    "start_date": "1960-06-16",
+    "first_cycles": [
+     "庚寅",
+     "己丑",
+     "戊子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "丙申·阳年 × 女: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1956-03-18T16:11:25对照(sect1); 距最近节1101333秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_063",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1967-12-01",
+    "birth_time": "21:15",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丁未",
+     "month": "辛亥",
+     "day": "己亥",
+     "hour": "乙亥"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 2,
+     "metal": 1,
+     "water": 3
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 7,
+     "months": 9
+    },
+    "start_date": "1975-09-24",
+    "first_cycles": [
+     "庚戌",
+     "己酉",
+     "戊申"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "丁未·阴年 × 男: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1967-12-01T21:25:41对照(sect1); 距最近节540147秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_064",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1967-12-01",
+    "birth_time": "21:15",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丁未",
+     "month": "辛亥",
+     "day": "己亥",
+     "hour": "乙亥"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 2,
+     "metal": 1,
+     "water": 3
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 2,
+     "months": 1
+    },
+    "start_date": "1970-01-01",
+    "first_cycles": [
+     "壬子",
+     "癸丑",
+     "甲寅"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "丁未·阴年 × 女: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1967-12-01T21:25:41对照(sect1); 距最近节540147秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_065",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1988-11-20",
+    "birth_time": "06:45",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊辰",
+     "month": "癸亥",
+     "day": "己卯",
+     "hour": "丁卯"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 3,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 5,
+     "months": 7
+    },
+    "start_date": "1994-07-14",
+    "first_cycles": [
+     "甲子",
+     "乙丑",
+     "丙寅"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "戊辰·阳年 × 男: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1988-11-20T06:59:10对照(sect1); 距最近节1101365秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_066",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1988-11-20",
+    "birth_time": "06:45",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊辰",
+     "month": "癸亥",
+     "day": "己卯",
+     "hour": "丁卯"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 3,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 4,
+     "months": 2
+    },
+    "start_date": "1993-02-18",
+    "first_cycles": [
+     "壬戌",
+     "辛酉",
+     "庚申"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "戊辰·阳年 × 女: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1988-11-20T06:59:10对照(sect1); 距最近节1101365秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_067",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1999-06-30",
+    "birth_time": "13:05",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "己卯",
+     "month": "庚午",
+     "day": "癸丑",
+     "hour": "己未"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 4,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 8,
+     "months": 0
+    },
+    "start_date": "2007-07-09",
+    "first_cycles": [
+     "己巳",
+     "戊辰",
+     "丁卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "己卯·阴年 × 男: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1999-06-30T13:01:48对照(sect1); 距最近节634799秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_068",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "1999-06-30",
+    "birth_time": "13:05",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "己卯",
+     "month": "庚午",
+     "day": "癸丑",
+     "hour": "己未"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 4,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 2,
+     "months": 5
+    },
+    "start_date": "2001-12-11",
+    "first_cycles": [
+     "辛未",
+     "壬申",
+     "癸酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "己卯·阴年 × 女: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1999-06-30T13:01:48对照(sect1); 距最近节634799秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_069",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "2008-05-18",
+    "birth_time": "18:40",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊子",
+     "month": "丁巳",
+     "day": "戊午",
+     "hour": "辛酉"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 3,
+     "earth": 2,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 5,
+     "months": 11
+    },
+    "start_date": "2014-04-30",
+    "first_cycles": [
+     "戊午",
+     "己未",
+     "庚申"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "戊子·阳年 × 男: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2008-05-18T18:43:51对照(sect1); 距最近节1150595秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_070",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "2008-05-18",
+    "birth_time": "18:40",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊子",
+     "month": "丁巳",
+     "day": "戊午",
+     "hour": "辛酉"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 3,
+     "earth": 2,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 4,
+     "months": 5
+    },
+    "start_date": "2012-10-26",
+    "first_cycles": [
+     "丙辰",
+     "乙卯",
+     "甲寅"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "戊子·阳年 × 女: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2008-05-18T18:43:51对照(sect1); 距最近节1150595秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_071",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "2021-07-07",
+    "birth_time": "09:55",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "辛丑",
+     "month": "乙未",
+     "day": "丙辰",
+     "hour": "癸巳"
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 2,
+     "earth": 3,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2021-07-31",
+    "first_cycles": [
+     "甲午",
+     "癸巳",
+     "壬辰"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "辛丑·阴年 × 男: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2021-07-07T09:50:28对照(sect1); 距最近节17372秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_072",
+   "category": "luck_quadrant",
+   "input": {
+    "birth_date": "2021-07-07",
+    "birth_time": "09:55",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "辛丑",
+     "month": "乙未",
+     "day": "丙辰",
+     "hour": "癸巳"
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 2,
+     "earth": 3,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 10,
+     "months": 4
+    },
+    "start_date": "2031-12-01",
+    "first_cycles": [
+     "丙申",
+     "丁酉",
+     "戊戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "辛丑·阴年 × 女: 验大运顺逆与干支序列; 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2021-07-07T09:50:28对照(sect1); 距最近节17372秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_073",
+   "category": "start_age_extreme",
+   "input": {
+    "birth_date": "1953-06-06",
+    "birth_time": "08:21",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "癸巳",
+     "month": "戊午",
+     "day": "戊子",
+     "hour": "丙辰"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 3,
+     "earth": 3,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1953-06-06",
+    "first_cycles": [
+     "丁巳",
+     "丙辰",
+     "乙卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1953年芒种后约5分钟(逆排起运趋近0岁, 顺排趋近满值); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1953-06-06T08:22:50对照(sect1); 距最近节296秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_074",
+   "category": "start_age_extreme",
+   "input": {
+    "birth_date": "1953-06-06",
+    "birth_time": "08:21",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "癸巳",
+     "month": "戊午",
+     "day": "戊子",
+     "hour": "丙辰"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 3,
+     "earth": 3,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 10,
+     "months": 5
+    },
+    "start_date": "1963-11-27",
+    "first_cycles": [
+     "己未",
+     "庚申",
+     "辛酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1953年芒种后约5分钟(逆排起运趋近0岁, 顺排趋近满值); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1953-06-06T08:22:50对照(sect1); 距最近节296秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_075",
+   "category": "start_age_extreme",
+   "input": {
+    "birth_date": "1978-10-08",
+    "birth_time": "23:42",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊午",
+     "month": "壬戌",
+     "day": "甲辰",
+     "hour": "甲子"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 3,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 10,
+     "months": 0
+    },
+    "start_date": "1988-10-22",
+    "first_cycles": [
+     "癸亥",
+     "甲子",
+     "乙丑"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1978年寒露后约12分钟(逆排起运趋近0岁, 顺排趋近满值); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1978-10-08T23:54:41对照(sect1); 距最近节666秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_076",
+   "category": "start_age_extreme",
+   "input": {
+    "birth_date": "1978-10-08",
+    "birth_time": "23:42",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊午",
+     "month": "壬戌",
+     "day": "甲辰",
+     "hour": "甲子"
+    },
+    "day_master": {
+     "stem": "甲",
+     "element": "wood",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 3,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "1978-10-08",
+    "first_cycles": [
+     "辛酉",
+     "庚申",
+     "己未"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "1978年寒露后约12分钟(逆排起运趋近0岁, 顺排趋近满值); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1978-10-08T23:54:41对照(sect1); 距最近节666秒(盲区外); 起运两库差12命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_077",
+   "category": "start_age_extreme",
+   "input": {
+    "birth_date": "2015-11-08",
+    "birth_time": "01:52",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙未",
+     "month": "丙戌",
+     "day": "戊子",
+     "hour": "癸丑"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 4,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 10,
+     "months": 0
+    },
+    "start_date": "2025-11-23",
+    "first_cycles": [
+     "乙酉",
+     "甲申",
+     "癸未"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2015年立冬前约6分钟(顺排起运趋近0岁, 逆排趋近满值); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2015-11-08T02:08:09对照(sect1); 距最近节399秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_078",
+   "category": "start_age_extreme",
+   "input": {
+    "birth_date": "2015-11-08",
+    "birth_time": "01:52",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙未",
+     "month": "丙戌",
+     "day": "戊子",
+     "hour": "癸丑"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 4,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2015-11-08",
+    "first_cycles": [
+     "丁亥",
+     "戊子",
+     "己丑"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2015年立冬前约6分钟(顺排起运趋近0岁, 逆排趋近满值); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2015-11-08T02:08:09对照(sect1); 距最近节399秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_079",
+   "category": "start_age_extreme",
+   "input": {
+    "birth_date": "2062-04-04",
+    "birth_time": "19:35",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "壬午",
+     "month": "癸卯",
+     "day": "丁巳",
+     "hour": "庚戌"
+    },
+    "day_master": {
+     "stem": "丁",
+     "element": "fire",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 3,
+     "earth": 1,
+     "metal": 1,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 0,
+     "months": 0
+    },
+    "start_date": "2062-04-05",
+    "first_cycles": [
+     "甲辰",
+     "乙巳",
+     "丙午"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2062年清明前约20分钟(顺排起运趋近0岁, 逆排趋近满值); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2062-04-04T19:31:33对照(sect1); 距最近节1248秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_080",
+   "category": "start_age_extreme",
+   "input": {
+    "birth_date": "2062-04-04",
+    "birth_time": "19:35",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "壬午",
+     "month": "癸卯",
+     "day": "丁巳",
+     "hour": "庚戌"
+    },
+    "day_master": {
+     "stem": "丁",
+     "element": "fire",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 3,
+     "earth": 1,
+     "metal": 1,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 10,
+     "months": 0
+    },
+    "start_date": "2072-04-24",
+    "first_cycles": [
+     "壬寅",
+     "辛丑",
+     "庚子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "2062年清明前约20分钟(顺排起运趋近0岁, 逆排趋近满值); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2062-04-04T19:31:33对照(sect1); 距最近节1248秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_081",
+   "category": "hour_unknown",
+   "input": {
+    "birth_date": "1912-02-20",
+    "birth_time": null,
+    "timezone": "Asia/Shanghai",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "壬子",
+     "month": "壬寅",
+     "day": "丙寅",
+     "hour": null
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 0,
+     "metal": 0,
+     "water": 3
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 4,
+     "months": 11
+    },
+    "start_date": "1917-01-21",
+    "first_cycles": [
+     "癸卯",
+     "甲辰",
+     "乙巳"
+    ],
+    "partial": true
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "时辰未知: 验 partial=true / hour=null / 五行按6字口径; 四柱/大运方向/前6步大运干支与lunar-python一致; 时辰未知: 日柱按公历日正午对照; 时柱=null不对照; 距最近节1275658秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_082",
+   "category": "hour_unknown",
+   "input": {
+    "birth_date": "1935-07-15",
+    "birth_time": null,
+    "timezone": "Asia/Shanghai",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙亥",
+     "month": "癸未",
+     "day": "壬辰",
+     "hour": null
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 0,
+     "earth": 2,
+     "metal": 0,
+     "water": 3
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 8,
+     "months": 1
+    },
+    "start_date": "1943-08-23",
+    "first_cycles": [
+     "甲申",
+     "乙酉",
+     "丙戌"
+    ],
+    "partial": true
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "时辰未知: 验 partial=true / hour=null / 五行按6字口径; 四柱/大运方向/前6步大运干支与lunar-python一致; 时辰未知: 日柱按公历日正午对照; 时柱=null不对照; 距最近节611667秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_083",
+   "category": "hour_unknown",
+   "input": {
+    "birth_date": "1976-08-08",
+    "birth_time": null,
+    "timezone": "Asia/Shanghai",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丙辰",
+     "month": "丙申",
+     "day": "壬辰",
+     "hour": null
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 2,
+     "earth": 2,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 10,
+     "months": 1
+    },
+    "start_date": "1986-09-20",
+    "first_cycles": [
+     "丁酉",
+     "戊戌",
+     "己亥"
+    ],
+    "partial": true
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "时辰未知: 验 partial=true / hour=null / 五行按6字口径; 四柱/大运方向/前6步大运干支与lunar-python一致; 时辰未知: 日柱按公历日正午对照; 时柱=null不对照; 距最近节66100秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_084",
+   "category": "hour_unknown",
+   "input": {
+    "birth_date": "1993-01-10",
+    "birth_time": null,
+    "timezone": "Asia/Shanghai",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "壬申",
+     "month": "癸丑",
+     "day": "辛卯",
+     "hour": null
+    },
+    "day_master": {
+     "stem": "辛",
+     "element": "metal",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 0,
+     "earth": 1,
+     "metal": 2,
+     "water": 2
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 1,
+     "months": 7
+    },
+    "start_date": "1994-08-20",
+    "first_cycles": [
+     "壬子",
+     "辛亥",
+     "庚戌"
+    ],
+    "partial": true
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "时辰未知: 验 partial=true / hour=null / 五行按6字口径; 四柱/大运方向/前6步大运干支与lunar-python一致; 时辰未知: 日柱按公历日正午对照; 时柱=null不对照; 距最近节417808秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_085",
+   "category": "hour_unknown",
+   "input": {
+    "birth_date": "2003-04-18",
+    "birth_time": null,
+    "timezone": "Asia/Shanghai",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "癸未",
+     "month": "丙辰",
+     "day": "辛酉",
+     "hour": null
+    },
+    "day_master": {
+     "stem": "辛",
+     "element": "metal",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 1,
+     "earth": 2,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 4,
+     "months": 3
+    },
+    "start_date": "2007-08-12",
+    "first_cycles": [
+     "乙卯",
+     "甲寅",
+     "癸丑"
+    ],
+    "partial": true
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "时辰未知: 验 partial=true / hour=null / 五行按6字口径; 四柱/大运方向/前6步大运干支与lunar-python一致; 时辰未知: 日柱按公历日正午对照; 时柱=null不对照; 距最近节1120050秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_086",
+   "category": "hour_unknown",
+   "input": {
+    "birth_date": "2027-09-30",
+    "birth_time": null,
+    "timezone": "Asia/Shanghai",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丁未",
+     "month": "己酉",
+     "day": "壬子",
+     "hour": null
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 1,
+     "earth": 2,
+     "metal": 1,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 2,
+     "months": 9
+    },
+    "start_date": "2030-07-11",
+    "first_cycles": [
+     "庚戌",
+     "辛亥",
+     "壬子"
+    ],
+    "partial": true
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "时辰未知: 验 partial=true / hour=null / 五行按6字口径; 四柱/大运方向/前6步大运干支与lunar-python一致; 时辰未知: 日柱按公历日正午对照; 时柱=null不对照; 距最近节721024秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_087",
+   "category": "hour_unknown",
+   "input": {
+    "birth_date": "2055-06-16",
+    "birth_time": null,
+    "timezone": "Asia/Shanghai",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙亥",
+     "month": "壬午",
+     "day": "癸巳",
+     "hour": null
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 2,
+     "earth": 0,
+     "metal": 0,
+     "water": 3
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 3,
+     "months": 6
+    },
+    "start_date": "2058-12-16",
+    "first_cycles": [
+     "辛巳",
+     "庚辰",
+     "己卯"
+    ],
+    "partial": true
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "时辰未知: 验 partial=true / hour=null / 五行按6字口径; 四柱/大运方向/前6步大运干支与lunar-python一致; 时辰未知: 日柱按公历日正午对照; 时柱=null不对照; 距最近节907433秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_088",
+   "category": "hour_unknown",
+   "input": {
+    "birth_date": "2088-12-12",
+    "birth_time": null,
+    "timezone": "Asia/Shanghai",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊申",
+     "month": "甲子",
+     "day": "丙戌",
+     "hour": null
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 2,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 2,
+     "months": 0
+    },
+    "start_date": "2090-12-12",
+    "first_cycles": [
+     "癸亥",
+     "壬戌",
+     "辛酉"
+    ],
+    "partial": true
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "时辰未知: 验 partial=true / hour=null / 五行按6字口径; 四柱/大运方向/前6步大运干支与lunar-python一致; 时辰未知: 日柱按公历日正午对照; 时柱=null不对照; 距最近节518526秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_089",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "1992-05-27",
+    "birth_time": "06:11",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "壬申",
+     "month": "乙巳",
+     "day": "癸卯",
+     "hour": "乙卯"
+    },
+    "day_master": {
+     "stem": "癸",
+     "element": "water",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 4,
+     "fire": 1,
+     "earth": 0,
+     "metal": 1,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 3,
+     "months": 2
+    },
+    "start_date": "1995-07-27",
+    "first_cycles": [
+     "丙午",
+     "丁未",
+     "戊申"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1992-05-27T06:14:12对照(sect1); 距最近节821479秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_090",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "2030-04-22",
+    "birth_time": "07:44",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚戌",
+     "month": "庚辰",
+     "day": "丁亥",
+     "hour": "甲辰"
+    },
+    "day_master": {
+     "stem": "丁",
+     "element": "fire",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 3,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 5,
+     "months": 9
+    },
+    "start_date": "2036-01-22",
+    "first_cycles": [
+     "己卯",
+     "戊寅",
+     "丁丑"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2030-04-22T07:45:19对照(sect1); 距最近节1162939秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_091",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "1930-10-28",
+    "birth_time": "23:39",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚午",
+     "month": "丙戌",
+     "day": "壬子",
+     "hour": "庚子"
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 2,
+     "earth": 1,
+     "metal": 2,
+     "water": 3
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 3,
+     "months": 5
+    },
+    "start_date": "1934-04-25",
+    "first_cycles": [
+     "丁亥",
+     "戊子",
+     "己丑"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1930-10-28T23:55:15对照(sect1); 距最近节906072秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_092",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "2089-07-30",
+    "birth_time": "14:44",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "己酉",
+     "month": "辛未",
+     "day": "丙子",
+     "hour": "乙未"
+    },
+    "day_master": {
+     "stem": "丙",
+     "element": "fire",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 3,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 2,
+     "months": 5
+    },
+    "start_date": "2092-01-20",
+    "first_cycles": [
+     "壬申",
+     "癸酉",
+     "甲戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2089-07-30T14:37:25对照(sect1); 距最近节642114秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_093",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "2058-02-24",
+    "birth_time": "00:54",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "戊寅",
+     "month": "甲寅",
+     "day": "丁巳",
+     "hour": "庚子"
+    },
+    "day_master": {
+     "stem": "丁",
+     "element": "fire",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 3,
+     "fire": 2,
+     "earth": 1,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 3,
+     "months": 2
+    },
+    "start_date": "2061-05-11",
+    "first_cycles": [
+     "乙卯",
+     "丙辰",
+     "丁巳"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2058-02-24T00:40:16对照(sect1); 距最近节833169秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_094",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "2005-12-03",
+    "birth_time": "23:19",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙酉",
+     "month": "丁亥",
+     "day": "壬戌",
+     "hour": "庚子"
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 1,
+     "metal": 2,
+     "water": 3
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 1,
+     "months": 1
+    },
+    "start_date": "2007-01-19",
+    "first_cycles": [
+     "戊子",
+     "己丑",
+     "庚寅"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2005-12-03T23:28:54对照(sect1); 距最近节292422秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_095",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "1985-05-26",
+    "birth_time": "14:45",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙丑",
+     "month": "辛巳",
+     "day": "乙丑",
+     "hour": "癸未"
+    },
+    "day_master": {
+     "stem": "乙",
+     "element": "wood",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 3,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 6,
+     "months": 10
+    },
+    "start_date": "1992-04-20",
+    "first_cycles": [
+     "庚辰",
+     "己卯",
+     "戊寅"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1985-05-26T14:48:20对照(sect1); 距最近节904495秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_096",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "2036-03-05",
+    "birth_time": "15:31",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丙辰",
+     "month": "辛卯",
+     "day": "辛未",
+     "hour": "丙申"
+    },
+    "day_master": {
+     "stem": "辛",
+     "element": "metal",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 2,
+     "earth": 2,
+     "metal": 3,
+     "water": 0
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 0,
+     "months": 1
+    },
+    "start_date": "2036-04-11",
+    "first_cycles": [
+     "庚寅",
+     "己丑",
+     "戊子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2036-03-05T15:19:00对照(sect1); 距最近节26351秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_097",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "1960-12-15",
+    "birth_time": "02:33",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "庚子",
+     "month": "戊子",
+     "day": "丁丑",
+     "hour": "辛丑"
+    },
+    "day_master": {
+     "stem": "丁",
+     "element": "fire",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 0,
+     "fire": 1,
+     "earth": 3,
+     "metal": 2,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 7,
+     "months": 3
+    },
+    "start_date": "1968-03-20",
+    "first_cycles": [
+     "己丑",
+     "庚寅",
+     "辛卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1960-12-15T02:38:13对照(sect1); 距最近节662116秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_098",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "2024-06-24",
+    "birth_time": "18:09",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲辰",
+     "month": "庚午",
+     "day": "己未",
+     "hour": "癸酉"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 3,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 6,
+     "months": 4
+    },
+    "start_date": "2030-11-22",
+    "first_cycles": [
+     "己巳",
+     "戊辰",
+     "丁卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2024-06-24T18:06:55对照(sect1); 距最近节1051864秒(盲区外); 起运两库差12命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_099",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "1954-04-23",
+    "birth_time": "18:01",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲午",
+     "month": "戊辰",
+     "day": "己酉",
+     "hour": "癸酉"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 1,
+     "earth": 3,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 4,
+     "months": 2
+    },
+    "start_date": "1958-07-11",
+    "first_cycles": [
+     "己巳",
+     "庚午",
+     "辛未"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1954-04-23T18:02:37对照(sect1); 距最近节1093028秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_100",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "1926-03-30",
+    "birth_time": "10:09",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丙寅",
+     "month": "辛卯",
+     "day": "戊午",
+     "hour": "丁巳"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 4,
+     "earth": 1,
+     "metal": 1,
+     "water": 0
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 7,
+     "months": 11
+    },
+    "start_date": "1934-02-28",
+    "first_cycles": [
+     "庚寅",
+     "己丑",
+     "戊子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1926-03-30T10:03:51对照(sect1); 距最近节558557秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_101",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "2004-07-08",
+    "birth_time": "14:56",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "甲申",
+     "month": "辛未",
+     "day": "戊子",
+     "hour": "己未"
+    },
+    "day_master": {
+     "stem": "戊",
+     "element": "earth",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 0,
+     "earth": 4,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 9,
+     "months": 11
+    },
+    "start_date": "2014-06-24",
+    "first_cycles": [
+     "壬申",
+     "癸酉",
+     "甲戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2004-07-08T14:51:11对照(sect1); 距最近节131083秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_102",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "2007-06-27",
+    "birth_time": "10:36",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丁亥",
+     "month": "丙午",
+     "day": "壬辰",
+     "hour": "乙巳"
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 4,
+     "earth": 1,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 3,
+     "months": 5
+    },
+    "start_date": "2010-12-12",
+    "first_cycles": [
+     "丁未",
+     "戊申",
+     "己酉"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2007-06-27T10:33:27对照(sect1); 距最近节896744秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_103",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "2003-07-01",
+    "birth_time": "11:38",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "癸未",
+     "month": "戊午",
+     "day": "乙亥",
+     "hour": "壬午"
+    },
+    "day_master": {
+     "stem": "乙",
+     "element": "wood",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 2,
+     "earth": 2,
+     "metal": 0,
+     "water": 3
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 8,
+     "months": 4
+    },
+    "start_date": "2011-11-07",
+    "first_cycles": [
+     "丁巳",
+     "丙辰",
+     "乙卯"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2003-07-01T11:34:36对照(sect1); 距最近节550659秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_104",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "1956-03-26",
+    "birth_time": "13:03",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "丙申",
+     "month": "辛卯",
+     "day": "壬辰",
+     "hour": "丙午"
+    },
+    "day_master": {
+     "stem": "壬",
+     "element": "water",
+     "yin_yang": "yang"
+    },
+    "five_elements": {
+     "wood": 1,
+     "fire": 3,
+     "earth": 1,
+     "metal": 2,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 6,
+     "months": 10
+    },
+    "start_date": "1963-02-08",
+    "first_cycles": [
+     "庚寅",
+     "己丑",
+     "戊子"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1956-03-26T12:56:51对照(sect1); 距最近节829689秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_105",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "1956-01-19",
+    "birth_time": "23:08",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "male"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "乙未",
+     "month": "己丑",
+     "day": "乙酉",
+     "hour": "丁亥"
+    },
+    "day_master": {
+     "stem": "乙",
+     "element": "wood",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 3,
+     "metal": 1,
+     "water": 1
+    },
+    "direction": "backward",
+    "start_age": {
+     "years": 4,
+     "months": 5
+    },
+    "start_date": "1960-06-22",
+    "first_cycles": [
+     "戊子",
+     "丁亥",
+     "丙戌"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时1956-01-19T22:57:59对照(sect1); 距最近节1147063秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  },
+  {
+   "id": "case_106",
+   "category": "random_regular",
+   "input": {
+    "birth_date": "2023-10-28",
+    "birth_time": "06:20",
+    "timezone": "Asia/Shanghai",
+    "lat": 31.23,
+    "lng": 120.0,
+    "sex": "female"
+   },
+   "options": {
+    "late_zi_new_day": true
+   },
+   "expected": {
+    "pillars": {
+     "year": "癸卯",
+     "month": "壬戌",
+     "day": "己未",
+     "hour": "丁卯"
+    },
+    "day_master": {
+     "stem": "己",
+     "element": "earth",
+     "yin_yang": "yin"
+    },
+    "five_elements": {
+     "wood": 2,
+     "fire": 1,
+     "earth": 3,
+     "metal": 0,
+     "water": 2
+    },
+    "direction": "forward",
+    "start_age": {
+     "years": 3,
+     "months": 7
+    },
+    "start_date": "2027-05-29",
+    "first_cycles": [
+     "癸亥",
+     "甲子",
+     "乙丑"
+    ],
+    "partial": false
+   },
+   "source": "三层来源(已拍板 2026-07-17): 权威锚=紫金山天文台《中国天文年历》体系(含GB/T 33661-2017); 双源准入=Swiss Ephemeris × lunar-python 1.4.8; 第三对照=sxtwl 2.0.7",
+   "verification": {
+    "lunar_python_agrees": true,
+    "notes": "随机常规例(种子20260717); 四柱/大运方向/前6步大运干支与lunar-python一致; 日/时柱按真太阳时2023-10-28T06:36:12对照(sect1); 距最近节929735秒(盲区外); 起运两库差0命理分钟(容差24)"
+   }
+  }
+ ]
+}

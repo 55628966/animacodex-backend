@@ -1,0 +1,8 @@
+# Anima Codex 模型A 后端依赖 (Python 3.12)
+pyswisseph>=2.10     # 节气主源: 瑞士星历表(太阳视黄经交越)
+lunar-python==1.4.8  # 交叉验证副源(独立万年历实现), 版本锁定保证测试可复现
+sxtwl==2.0.7         # 第三对照源(注意: 1940年代含历史时制, 仅作对照)
+fastapi
+uvicorn
+pytest
+httpx                # fastapi.testclient 依赖(仅测试用)
